@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css?v=160">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+   <header>
+      <div class="container top">
+        <a href="#top" class="brand">
+          <span class="logo"><img src="barsimg/logo.png" alt=""></span>
+          <span class="BARS">BARS SPECIAL</span>
+        </a>
+
+        <nav class="menu desktop">
+          <ul>
+            <li><a href="index.html" data-i18n="nav.home">Главная</a></li>
+
+            <li>
+              <a href="#" data-i18n="nav.company">Компания ▾</a>
+              <ul class="submenu">
+                <li><a href="about.html" data-i18n="company.about">О компании</a></li>
+                <li><a href="managment.html" data-i18n="company.management">Руководство</a></li>
+                <li><a href="policy.html" data-i18n="company.rukovotsva">Сертификаты руководства</a></li>
+                <li><a href="certificates.html" data-i18n="company.certificates">Сертификаты компании</a></li>
+                <li><a href="licenses.html" data-i18n="company.licenses">лицензии</a></li>
+                <li><a href="reviews.html" data-i18n="company.work" style="border-bottom: none;">Отзывы о работе</a>
+                <!-- <li><a href="reviews.html" data-i18n="wartnoma" style="border-bottom: none;">Shartnoma</a> -->
+                </li>
+              </ul>
+            </li>
+            <!-- o`chirgan ko`t faqat bu yozuvni xazillashtimmmmmm o`chirgan chiroyli bola "boshqa dasturchiga estalik" -->
+
+
+            <li>
+              <a href="#" data-i18n="nav.services">Услуги ▾</a>
+              <ul class="submenu">
+                <li><a href="linear.html" data-i18n="services.linear">Линейное строительство</a></li>
+                <li><a style="border-bottom: none;" href="./civile.html" data-i18n="services.civil">Гражданское
+                    строительство</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="contact.html" data-i18n="nav.contacts">Контакты </a>
+              <ul class="submenu">
+                <li><a href="contact.html" data-i18n="contact.contact">Контакты</a></li>
+                <li><a href="map.html" data-i18n="InMap">Мы на карте</a></li>
+                <li><a style="border-bottom: none;" href="#" data-i18n="Fikr">Обратная связь</a></li>
+              </ul>
+            </li>
+
+
+            <li>
+              <a href="#" data-i18n="nav.lang">Язык ▾</a>
+              <ul class="submenu">
+                <li><a href="#" onclick="__setLang('uz')">uz</a></li>
+                <li><a href="#" onclick="__setLang('ru')">ru</a></li>
+                <li><a style="border-bottom:none ;" href="#" onclick="__setLang('en')">en</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+       <div class="fons">
+         <button class="fon" id="theme-toggle"><i class="fa-solid fa-sun"></i></button>
+        <button class="burger fon" id="burger" aria-label="menu"><i class="fa-solid fa-bars"></i></button>
+       </div>
+
+      </div>
+      <div class="mobile" id="mobile">
+
+        <nav class="menu-mobil">
+          <ul>
+            <li><a href="index.html" data-i18n="nav.home">Главная</a></li>
+
+            <li>
+              <a href="#" data-i18n="nav.company">Компания ▾</a>
+              <ul class="submenu">
+                <li><a href="about.html" data-i18n="company.about">О компании</a></li>
+                <li><a href="managment.html" data-i18n="company.management">Руководство</a></li>
+                <li><a href="policy.html" data-i18n="company.rukovotsva">Сертификаты руководства</a></li>
+                <li><a href="certificates.html" data-i18n="company.certificates">Сертификаты компании</a></li>
+                <li><a href="licenses.html" data-i18n="company.licenses">лицензии</a></li>
+                <li><a href="reviews.html" data-i18n="company.work" style="border-bottom: none;">Отзывы о работе</a>
+                </li>
+              </ul>
+            </li>
+            <!-- o`chirgan ko`t faqat bu yozuvni xazillashtimmmmmm o`chirgan chiroyli bola "boshqa dasturchiga estalik" -->
+
+
+            <li>
+              <a href="#" data-i18n="nav.services">Услуги ▾</a>
+              <ul class="submenu">
+                <li><a href="linear.html" data-i18n="services.linear">Линейное строительство</a></li>
+                <li><a style="border-bottom: none;" href="./civile.html" data-i18n="services.civil">Гражданское
+                    строительство</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="contact.html" data-i18n="nav.contacts">Контакты </a>
+              <ul class="submenu">
+                <li><a href="contact.html" data-i18n="contact.contact">Контакты</a></li>
+                <li><a href="map.html" data-i18n="InMap">Мы на карте</a></li>
+                <li><a style="border-bottom: none;" href="#" data-i18n="Fikr">Обратная связь</a></li>
+              </ul>
+            </li>
+
+
+            <li>
+              <a href="#" data-i18n="nav.lang">Язык ▾</a>
+              <ul class="submenu">
+                <li><a href="#" onclick="__setLang('uz')">uz</a></li>
+                <li><a href="#" onclick="__setLang('ru')">ru</a></li>
+                <li><a style="border-bottom:none ;" href="#" onclick="__setLang('en')">en</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        
+      </div>
+    </header>
+
+   <div class="otziv">
+  <h1 data-i18n="reviews.title">Отзывы о работе</h1>
+</div>
+    <section class="managment_section">
+        <div class="managment_grid" id="managment_cardGrid">
+            <!-- Bitta kartochka misol uchun -->
+
+            <div class="managment_card">
+                <a href="barsimg/guvoxnoma1.jpg" target="_blank" rel="noopener noreferrer">
+                    <img src="barsimg/guvoxnoma1.jpg" alt="Card Image" />
+                </a>
+                <div class="managment_text">
+                    <!-- <h1>Turayev Ulug'bek Obidovich</h1>
+                    <h3>BOSHLIQ</h3>
+                    <p>''BARS SPECIAL'' sanoat qurilishing asoschisi</p> -->
+                </div>
+            </div>
+          
+        </div>
+
+    </section>
+
+
+     <footer class="footer">
+      <div class="footer__grid">
+        <div class="col">
+          <div class="brand">
+            <img class="brand__logo" src="barsimg/logo.png" alt="">
+            <div>
+              <h3 class="brand__title">BARS SPECIAL</h3>
+            </div>
+          </div>
+
+          <p class="desc" data-i18n="footer.desc">
+            BARS SPECIAL — одна из крупнейших промышленных и строительных компаний Узбекистана.
+            Мы предоставляем нашим клиентам качественные услуги и инновационные решения.
+          </p>
+
+          <div class="contact">
+            <span><i class="fa-solid fa-phone"></i></span>
+            <span> +998 (97)738-74-65</span>
+            <span><i class="fa-solid fa-envelope"></i></span>
+            <a href="mailto:info@barsspecial.uz">info@barsspecial.uz</a>
+          </div>
+        </div>
+
+        <div class="col">
+          <h4 data-i18n="footer.services.title">Услуги</h4>
+          <ul>
+            <li><a href="#" data-i18n="footer.services.linear">Линейное строительство</a></li>
+            <li><a href="#" data-i18n="footer.services.civil">Гражданское строительство</a></li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h4 data-i18n="footer.company.title">Компания</h4>
+          <ul>
+            <li><a href="#" data-i18n="company.about">О компании</a></li>
+            <li><a href="#" data-i18n="company.management">Руководство</a></li>
+            <li><a href="#" data-i18n="company.policy">Политика предприятия</a></li>
+            <li><a href="#" data-i18n="company.certificates">Свидетельства</a></li>
+            <li><a href="#" data-i18n="company.licenses">Разрешения</a></li>
+            <li><a href="#" data-i18n="company.success">История успеха</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="ikonka">
+        <a href="https://www.instagram.com/bars_special?igsh=MWp4NDRwOHVrZnFsOA%3D%3D&utm_source=qr"><i
+            class="fa-brands fa-instagram"></i></a>
+        <a href="https://t.me/barsspecial_uz"><i class="fa-brands fa-telegram"></i></a>
+        <a href="https://www.youtube.com/@BarsSpecial"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61579253676633"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+
+      <div class="legal">
+        <div data-i18n="footer.copy">© 2025 БАРС СПЕЦИАЛ. Все права защищены.</div>
+        <div style="display:flex;gap:18px;flex-wrap:wrap">
+          <a href="#" data-i18n="footer.privacy">Политика конфиденциальности</a>
+          <a href="#" data-i18n="footer.terms">Условия использования</a>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js?v=160"></script>
+    <script src="i18n.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Barsspecial</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css?v=160">
+ 
+</head>
+
+<body>
+  <div class="container_origin">
+    <!-- ===========================UZURDA JIGAR ========================= -->
+    <!-- NAVBAR -->
+    <header>
+      <div class="container top">
+        <a href="#top" class="brand">
+          <span class="logo"><img src="barsimg/logo.png" alt=""></span>
+          <span class="BARS">BARS SPECIAL</span>
+        </a>
+
+        <nav class="menu desktop">
+          <ul>
+            <li><a href="index.html" data-i18n="nav.home">Главная</a></li>
+
+            <li>
+              <a href="#" data-i18n="nav.company">Компания ▾</a>
+              <ul class="submenu">
+                <li><a href="about.html" data-i18n="company.about">О компании</a></li>
+                <li><a href="managment.html" data-i18n="company.management">Руководство</a></li>
+                <li><a href="policy.html" data-i18n="company.rukovotsva">Сертификаты руководства</a></li>
+                <li><a href="certificates.html" data-i18n="company.certificates">Сертификаты компании</a></li>
+                <li><a href="licenses.html" data-i18n="company.licenses">лицензии</a></li>
+                <li><a href="reviews.html" data-i18n="company.work" style="border-bottom: none;">Отзывы о работе</a>
+                <!-- <li><a href="reviews.html" data-i18n="wartnoma" style="border-bottom: none;">Shartnoma</a> -->
+                </li>
+              </ul>
+            </li>
+            <!-- o`chirgan ko`t faqat bu yozuvni xazillashtimmmmmm o`chirgan chiroyli bola "boshqa dasturchiga estalik" -->
+
+
+            <li>
+              <a href="#" data-i18n="nav.services">Услуги ▾</a>
+              <ul class="submenu">
+                <li><a href="linear.html" data-i18n="services.linear">Линейное строительство</a></li>
+                <li><a style="border-bottom: none;" href="./civile.html" data-i18n="services.civil">Гражданское
+                    строительство</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="contact.html" data-i18n="nav.contacts">Контакты </a>
+              <ul class="submenu">
+                <li><a href="contact.html" data-i18n="contact.contact">Контакты</a></li>
+                <li><a href="map.html" data-i18n="InMap">Мы на карте</a></li>
+                <li><a style="border-bottom: none;" href="#" data-i18n="Fikr">Обратная связь</a></li>
+              </ul>
+            </li>
+
+
+            <li>
+              <a href="#" data-i18n="nav.lang">Язык ▾</a>
+              <ul class="submenu">
+                <li><a href="#" onclick="__setLang('uz')">uz</a></li>
+                <li><a href="#" onclick="__setLang('ru')">ru</a></li>
+                <li><a style="border-bottom:none ;" href="#" onclick="__setLang('en')">en</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+       <div class="fons">
+         <button class="fon" id="theme-toggle"><i class="fa-solid fa-sun"></i></button>
+        <button class="burger fon" id="burger" aria-label="menu"><i class="fa-solid fa-bars"></i></button>
+       </div>
+
+      </div>
+      <div class="mobile" id="mobile">
+
+        <nav class="menu-mobil">
+          <ul>
+            <li><a href="index.html" data-i18n="nav.home">Главная</a></li>
+
+            <li>
+              <a href="#" data-i18n="nav.company">Компания ▾</a>
+              <ul class="submenu">
+                <li><a href="about.html" data-i18n="company.about">О компании</a></li>
+                <li><a href="managment.html" data-i18n="company.management">Руководство</a></li>
+                <li><a href="policy.html" data-i18n="company.rukovotsva">Сертификаты руководства</a></li>
+                <li><a href="certificates.html" data-i18n="company.certificates">Сертификаты компании</a></li>
+                <li><a href="licenses.html" data-i18n="company.licenses">лицензии</a></li>
+                <li><a href="reviews.html" data-i18n="company.work" style="border-bottom: none;">Отзывы о работе</a>
+                </li>
+              </ul>
+            </li>
+            <!-- o`chirgan ko`t faqat bu yozuvni xazillashtimmmmmm o`chirgan chiroyli bola "boshqa dasturchiga estalik" -->
+
+
+            <li>
+              <a href="#" data-i18n="nav.services">Услуги ▾</a>
+              <ul class="submenu">
+                <li><a href="linear.html" data-i18n="services.linear">Линейное строительство</a></li>
+                <li><a style="border-bottom: none;" href="./civile.html" data-i18n="services.civil">Гражданское
+                    строительство</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="contact.html" data-i18n="nav.contacts">Контакты </a>
+              <ul class="submenu">
+                <li><a href="contact.html" data-i18n="contact.contact">Контакты</a></li>
+                <li><a href="map.html" data-i18n="InMap">Мы на карте</a></li>
+                <li><a style="border-bottom: none;" href="#" data-i18n="Fikr">Обратная связь</a></li>
+              </ul>
+            </li>
+
+
+            <li>
+              <a href="#" data-i18n="nav.lang">Язык ▾</a>
+              <ul class="submenu">
+                <li><a href="#" onclick="__setLang('uz')">uz</a></li>
+                <li><a href="#" onclick="__setLang('ru')">ru</a></li>
+                <li><a style="border-bottom:none ;" href="#" onclick="__setLang('en')">en</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="container wrap">
+        <div>
+          <h1 data-i18n="hero.title">Надёжное строительство</h1>
+          <p data-i18n="hero.subtitle">Ключевые проекты в срок: безопасно, прозрачно, стабильно. Сдаем как обещали.</p>
+          <a href="#about" class="btn btn-outline" data-i18n="hero.aboutBtn">О нас</a>
+        </div>
+      </div>
+    </section>
+    <!-- carousel -->
+
+
+    <section>
+      <div class="carousel_div" style="  max-width:380px; margin: auto;">
+        <h1 class="carousel_h1 media_h1" data-i18n="carusel_h1" style="color: var(--red); ">НАШИ ПАРТНЕРЫ</h1>
+      </div>
+      <div class="carousel-wrapper">
+        <div class="carousel-track">
+          <img src="barsimg/img1.jpg" alt="1" />
+          <img src="barsimg/img2.jpg" alt="2" />
+          <img src="barsimg/img3.jpg" alt="3" />
+          <img src="barsimg/img4.jpg" alt="4" />
+          <img src="barsimg/img5.jpg" alt="5" />
+
+
+
+          <img src="barsimg/img6.jpg" alt="1" />
+          <img src="barsimg/img7.jpg" alt="2" />
+          <img src="barsimg/img8.jpg" alt="3" />
+          <img src="barsimg/img9.jpg" alt="4" />
+          <img src="barsimg/img10.jpg" alt="5" />
+        </div>
+      </div>
+    </section>
+    <!-- CARDS -->
+    <section class="grid_cards">
+      <div class="grid_cards_card">
+        <div class="grid_cards_card_top">
+          <div class="grid_cards_card_top_left"><span><i class="fa-regular fa-calendar"></i></span></div>
+          <div class="grid_cards_card_top_right">
+            <h1>5+</h1>
+            <p data-i18n="cards.experience">лет опыта</p>
+          </div>
+        </div>
+        <div class="grid_cards_card_bottom">
+          <p class="carsp" data-i18n="cards.expText">
+            Эффективная и успешная масштабная работа в направлении нефтегазовой отрасли и жилищного строительства
+          </p>
+        </div>
+      </div>
+
+      <div class="grid_cards_card">
+        <div class="grid_cards_card_top">
+          <div class="grid_cards_card_top_left"><span><i class="fa-solid fa-house"></i></span></div>
+          <div class="grid_cards_card_top_right">
+            <h1>50 + </h1>
+            <p data-i18n="cards.projects">проектов</p>
+          </div>
+        </div>
+        <div class="grid_cards_card_bottom">
+          <p data-i18n="cards.projectsText">Реализовано множество успешных проектов различной сложности</p>
+        </div>
+      </div>
+
+      <div class="grid_cards_card">
+        <div class="grid_cards_card_top">
+          <div class="grid_cards_card_top_left"><span><i class="fa-solid fa-ranking-star"></i></span></div>
+          <div class="grid_cards_card_top_right">
+            <h1>100 %</h1>
+            <p data-i18n="cards.quality">Качество</p>
+          </div>
+        </div>
+        <div class="grid_cards_card_bottom">
+          <p data-i18n="cards.qualityText">Гарантируем высочайшее качество всех выполняемых работ</p>
+        </div>
+      </div>
+
+      <div class="grid_cards_card">
+        <div class="grid_cards_card_top">
+          <div class="grid_cards_card_top_left"><span><i class="fa-solid fa-clock"></i></span></div>
+          <div class="grid_cards_card_top_right">
+            <h1>24/7</h1>
+            <p data-i18n="cards.support">Поддержка</p>
+          </div>
+        </div>
+        <div class="grid_cards_card_bottom">
+          <p data-i18n="cards.supportText">Круглосуточная техническая поддержка и обслуживание</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACTIVITIES -->
+    <section class="activities">
+      <div class="activities_left">
+        <h1 data-i18n="activities.title">Деятельность</h1>
+        <p data-i18n="activities.text">
+          <span class="span"><i class="fa-solid fa-circle-dot"></i></span>
+          Строительно-монтажные работы выполняются в строгом соответствии с требованиями международных стандартов
+          качества и безопасности
+        </p>
+        <div class="activities_img"></div>
+      </div>
+
+      <div class="activities_right">
+        <div class="activities_right_cart">
+          <div class="activities_right_cart_ikon"><span></span></div>
+          <div class="activities_right_cart_text">
+            <h1 data-i18n="activities.linear.title">Линейное строительство</h1>
+            <p data-i18n="activities.linear.text">Строительство и монтаж линейных объектов в нефтегазовой отрасли</p>
+          </div>
+          <div class="activities_right_cart_link">
+            <h5><span><i class="fa-solid fa-circle-dot"></i></span><span
+                data-i18n="activities.linear.pipe">Трубопроводы</span></h5>
+            <h5><span><i class="fa-solid fa-circle-dot"></i></span><span
+                data-i18n="activities.linear.gas">Газопроводы</span></h5>
+            <h5><span><i class="fa-solid fa-circle-dot"></i></span><span
+                data-i18n="activities.linear.oil">Нефтепроводы</span></h5>
+          </div>
+          <div class="activities_right_cart_button">
+            <button data-i18n="btn.more">Подробнее</button>
+          </div>
+        </div>
+
+        <div class="activities_right_cart">
+          <div class="activities_right_cart_ikon"><span></span></div>
+          <div class="activities_right_cart_text">
+            <h1 data-i18n="activities.civil.title">Гражданское строительство</h1>
+            <p data-i18n="activities.civil.text">Строительство промышленных и гражданских объектов под ключ</p>
+          </div>
+          <div class="activities_right_cart_link">
+            <h5><span><i class="fa-solid fa-circle-dot"></i></span><span
+                data-i18n="activities.civil.industry">Промышленные объекты</span></h5>
+            <h5><span><i class="fa-solid fa-circle-dot"></i></span><span data-i18n="activities.civil.public">Гражданские
+                здания</span></h5>
+            <h5><span><i class="fa-solid fa-circle-dot"></i></span><span data-i18n="activities.civil.turnkey">Под
+                ключ</span></h5>
+          </div>
+          <div class="activities_right_cart_button">
+            <button data-i18n="btn.more">Подробнее</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EQUIPMENT -->
+    <section class="card-slider-section">
+      <div class="left-side">
+        <div class="left_side_box">
+          <div class="left_side_box_top">
+            <h1 data-i18n="equip.title">ОСНАЩЕНИЕ</h1>
+            <p data-i18n="equip.text">
+              Современное техническое оснащение позволяет выполнять работы любой сложности с высочайшим качеством и в
+              установленные сроки
+            </p>
+          </div>
+
+          <div class="left_side_box_bottom">
+            <section class="kartalar-bolimi">
+              <div class="kartalar-tarmogi">
+
+                <div class="karta">
+                  <div class="karta_top"><span><i class="fa-solid fa-truck"></i></span></div>
+                  <div class="carta_bottom">
+                    <h1>50+</h1>
+                    <h5 data-i18n="equip.cards.machinery">Единиц спецтехники</h5>
+                    <p data-i18n="equip.cards.machineryText">Современная техника различных типов</p>
+                  </div>
+                </div>
+
+                <div class="karta">
+                  <div class="karta_top"><span><i class="fa-solid fa-shield-virus"></i></span></div>
+                  <div class="carta_bottom">
+                    <h1>24/7</h1>
+                    <h5 data-i18n="equip.cards.availability">Доступность</h5>
+                    <p data-i18n="equip.cards.availabilityText">Круглосуточная техническая поддержка</p>
+                  </div>
+                </div>
+
+                <div class="karta">
+                  <div class="karta_top"><span><i class="fa-solid fa-helmet-safety"></i></span></div>
+                  <div class="carta_bottom">
+                    <h1>100%</h1>
+                    <h5 data-i18n="equip.cards.reliability">Надежность</h5>
+                    <p data-i18n="equip.cards.reliabilityText">Гарантированное качество работ</p>
+                  </div>
+                </div>
+
+                <div class="karta">
+                  <div class="karta_top"><span><i class="fa-solid fa-handshake"></i></span></div>
+                  <div class="carta_bottom">
+                    <h1>15+</h1>
+                    <h5 data-i18n="equip.cards.years">Лет опыта</h5>
+                    <p data-i18n="equip.cards.yearsText">Профессиональная команда специалистов</p>
+                  </div>
+                </div>
+
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="card-slider" id="card-slider">
+          <div class="card active">
+            <div class="slider_cart1">
+              <div class="slider_cart1_top"><span><i class="fa-regular fa-truck"></i></span></div>
+              <div class="slider_cart1_center">
+                <h1 data-i18n="equip.slide1.title">Оборудование</h1>
+                <p data-i18n="equip.slide1.text">Профессиональное оборудование для строительства и монтажа</p>
+              </div>
+              <div class="slider_cart1_bottom">
+                <h5 data-i18n="equip.slide1.welding">Сварочное </h5>
+                <h5 data-i18n="equip.slide1.generators">Генераторы</h5>
+                <h5 data-i18n="equip.slide1.compressors">Компрессоры</h5>
+                <h5 data-i18n="equip.slide1.pumps">Насосы</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="card hidden">
+            <div class="slider_cart1">
+              <div class="slider_cart1_top"><span><i class="fa-solid fa-wrench"></i></span></div>
+              <div class="slider_cart1_center">
+                <h1 data-i18n="equip.slide2.title">Спецтехника</h1>
+                <p data-i18n="equip.slide2.text">Современная строительная и грузовая техника для выполнения любых задач
+                </p>
+              </div>
+              <div class="slider_cart1_bottom">
+                <h5 data-i18n="equip.slide2.excavators">Экскаваторы</h5>
+                <h5 data-i18n="equip.slide2.cranes">Краны</h5>
+                <h5 data-i18n="equip.slide2.bulldozers">Бульдозеры</h5>
+                <h5 data-i18n="equip.slide2.dumptrucks">Самосвалы</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="card hidden">
+            <div class="slider_cart1">
+              <div class="slider_cart1_top"><span><i class="fa-solid fa-toolbox"></i></span></div>
+              <div class="slider_cart1_center">
+                <h1 data-i18n="equip.slide3.title">Инструменты</h1>
+                <p data-i18n="equip.slide3.text">Высококачественные инструменты для точной работы</p>
+              </div>
+              <div class="slider_cart1_bottom">
+                <h5 data-i18n="equip.slide3.electric">Электрические</h5>
+                <h5 data-i18n="equip.slide3.hand">Ручные</h5>
+                <h5 data-i18n="equip.slide3.measure">Измерительные</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="card hidden">
+            <div class="slider_cart1">
+              <div class="slider_cart1_top"><span><i class="fa-solid fa-gear"></i></span></div>
+              <div class="slider_cart1_center">
+                <h1 data-i18n="equip.slide4.title">Автоматизация</h1>
+                <p data-i18n="equip.slide4.text">Системы автоматизации и контроля производственных процессов</p>
+              </div>
+              <div class="slider_cart1_bottom">
+                <h5>KIPiA</h5>
+                <h5 data-i18n="equip.slide4.control">управления</h5>
+                <h5>Monitoring</h5>
+                <h5 data-i18n="equip.slide4.quality">качествo</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider-buttons">
+          <button class="arrow-btn" onclick="prevCard()">←</button>
+          <button class="arrow-btn" onclick="nextCard()">→</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- RENT -->
+    <section class="need">
+      <h1 data-i18n="rent.title">Нужна аренда спецтехники?</h1>
+      <p data-i18n="rent.text">Предлагаем аренду современной спецтехники и оборудования для ваших проектов.</p>
+      <button data-i18n="rent.btn">Закакзать аренду</button>
+    </section>
+
+    <!-- FORM -->
+    <section class="section-from">
+      <div class="form_left">
+        <section class="info-cards-vertical">
+          <div class="info-card">
+            <i class="fas fa-phone"></i>
+            <h3 data-i18n="contact.phone">Телефон</h3>
+            <p>+998 (97) 738 74 65</p>
+          </div>
+
+          <div class="info-card">
+            <i class="fas fa-envelope"></i>
+            <h3>Email</h3>
+            <p>Special.bars@mail.ru</p>
+          </div>
+
+          <div class="info-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3 data-i18n="contact.address">Адрес</h3>
+            <p>г.Ташкент, Яшнабадский район, Ахангаранское шоссе 111</p>
+          </div>
+
+          <div class="info-card">
+            <i class="fas fa-clock"></i>
+            <h3 data-i18n="contact.hours">Рабочие часы</h3>
+            <p data-i18n="contact.hoursText">Понедельник - Пятница 9:00 - 18:00 (GMT+5)</p>
+          </div>
+        </section>
+      </div>
+
+      <form action="#" method="post" class="form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name" data-i18n="form.name">Имя *</label>
+            <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+          </div>
+          <div class="form-group">
+            <label for="lastname" data-i18n="form.lastname">Фамилия *</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Ваша фамилия" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="phone" data-i18n="form.phone">Телефон *</label>
+          <input type="tel" id="phone" required name="phone" placeholder="123456789">
+        </div>
+
+        <div class="form-group">
+          <label for="email" data-i18n="form.email">Ваш e-mail *</label>
+          <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="kampanya" data-i18n="form.company">Компания</label>
+          <input type="text" id="kampanya" required placeholder="Название компании" name="kampanya">
+        </div>
+
+        <div class="form-group">
+          <label for="message" data-i18n="form.message">Сообщение *</label>
+          <textarea id="message" name="message" placeholder="Опишите ваш проект или задайте вопрос..."
+            required></textarea>
+        </div>
+
+        <button type="submit" data-i18n="form.submit">✈ Отправить сообщение</button>
+      </form>
+    </section>
+
+    <!-- CONTACTS MAP -->
+    <section id="contacts">
+      <div class="container contacts">
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d2193.42443790533!2d69.35838668810781!3d41.28816249161311!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDE3JzE3LjEiTiA2OcKwMjEnMzEuNiJF!5e1!3m2!1sru!2s!4v1757761603703!5m2!1sru!2s"
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="contacts_map">
+            <div class="contacts_map_left">
+              <div class="contacts_map_left_ikon"><span><i class="fa-solid fa-location-dot"></i></span></div>
+              <div class="contacts_map_left_text">
+                <h1 data-i18n="map.address.title">г.Ташкент, Яшнабадский район, Ахангаранское шоссе 111</h1>
+                <p data-i18n="map.address.subtitle">Узбекистан, Ташкент</p>
+              </div>
+              <button><a
+                  href="https://www.google.com/maps/place/41%C2%B017'17.1%22N+69%C2%B021'31.6%22E/@41.28809,69.358781,1694m/data=!3m1!1e3!4m4!3m3!8m2!3d41.28809!4d69.358781?entry=ttu&g_ep=EgoyMDI1MDkxMC4wIKXMDSoASAFQAw%3D%3D"
+                  data-i18n="map.btn">Открыть карту</a></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="contakts">
+          <h2 data-i18n="contacts.title">Контакты</h2>
+          <ul class="contact-list">
+            <li data-i18n="contacts.addrLine">г.Ташкент, Яшнабадский район, Ахангаранское шоссе 111</li>
+            <li>☎️ <a href="tel:+998977387465">+998 (97)738-74-65</a></li>
+            <li>☎️ <a href="tel:+998938233134">+998 (93)823-31-34</a></li>
+            <li><span data-i18n="contacts.socials">Мы в соцсетях:</span>
+              <a href="https://www.instagram.com/bars_special?igsh=MWp4NDRwOHVrZnFsOA%3D%3D&utm_source=qr"
+                class="inst">Instagram</a>,
+              <a class="tg" href="https://t.me/barsspecial_uz">Telegram</a>,
+              <a class="fuck" href="https://www.facebook.com/profile.php?id=61579253676633">Facebook</a>
+            </li>
+          </ul>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/bars_special?igsh=MWp4NDRwOHVrZnFsOA%3D%3D&utm_source=qr" target="_blank"
+              aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://t.me/barsspecial_uz" target="_blank" aria-label="Telegram"><i
+                class="fab fa-telegram"></i></a>
+            <a href="hhttps://www.facebook.com/profile.php?id=61579253676633" target="_blank" aria-label="Facebook"><i
+                class="fab fa-facebook"></i></a>
+            <a href="https://www.youtube.com/@BarsSpecial" target="_blank" aria-label="YouTube"><i
+                class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__grid">
+        <div class="col">
+          <div class="brand">
+            <img class="brand__logo" src="barsimg/logo.png" alt="">
+            <div>
+              <h3 class="brand__title">BARS SPECIAL</h3>
+            </div>
+          </div>
+
+          <p class="desc" data-i18n="footer.desc">
+            BARS SPECIAL — одна из крупнейших промышленных и строительных компаний Узбекистана.
+            Мы предоставляем нашим клиентам качественные услуги и инновационные решения.
+          </p>
+
+          <div class="contact">
+            <span><i class="fa-solid fa-phone"></i></span>
+            <span> +998 (97)738-74-65</span>
+            <span><i class="fa-solid fa-envelope"></i></span>
+            <a href="mailto:info@barsspecial.uz">info@barsspecial.uz</a>
+          </div>
+        </div>
+
+        <div class="col">
+          <h4 data-i18n="footer.services.title">Услуги</h4>
+          <ul>
+            <li><a href="#" data-i18n="footer.services.linear">Линейное строительство</a></li>
+            <li><a href="#" data-i18n="footer.services.civil">Гражданское строительство</a></li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h4 data-i18n="footer.company.title">Компания</h4>
+          <ul>
+            <li><a href="#" data-i18n="company.about">О компании</a></li>
+            <li><a href="#" data-i18n="company.management">Руководство</a></li>
+            <li><a href="#" data-i18n="company.policy">Политика предприятия</a></li>
+            <li><a href="#" data-i18n="company.certificates">Свидетельства</a></li>
+            <li><a href="#" data-i18n="company.licenses">Разрешения</a></li>
+            <li><a href="#" data-i18n="company.success">История успеха</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="ikonka">
+        <a href="https://www.instagram.com/bars_special?igsh=MWp4NDRwOHVrZnFsOA%3D%3D&utm_source=qr"><i
+            class="fa-brands fa-instagram"></i></a>
+        <a href="https://t.me/barsspecial_uz"><i class="fa-brands fa-telegram"></i></a>
+        <a href="https://www.youtube.com/@BarsSpecial"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61579253676633"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+
+      <div class="legal">
+        <div data-i18n="footer.copy">© 2025 БАРС СПЕЦИАЛ. Все права защищены.</div>
+        <div style="display:flex;gap:18px;flex-wrap:wrap">
+          <a href="#" data-i18n="footer.privacy">Политика конфиденциальности</a>
+          <a href="#" data-i18n="footer.terms">Условия использования</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+
+  <script src="script.js?v=160"></script>
+  <script src="i18n.js"></script>
+</body>
+
+</html>

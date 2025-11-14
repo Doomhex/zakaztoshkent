@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css?v=160">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+      <div class="container top">
+        <a href="#top" class="brand">
+          <span class="logo"><img src="barsimg/logo.png" alt=""></span>
+          <span class="BARS">BARS SPECIAL</span>
+        </a>
+
+        <nav class="menu desktop">
+          <ul>
+            <li><a href="index.html" data-i18n="nav.home">Главная</a></li>
+
+            <li>
+              <a href="#" data-i18n="nav.company">Компания ▾</a>
+              <ul class="submenu">
+                <li><a href="about.html" data-i18n="company.about">О компании</a></li>
+                <li><a href="managment.html" data-i18n="company.management">Руководство</a></li>
+                <li><a href="policy.html" data-i18n="company.rukovotsva">Сертификаты руководства</a></li>
+                <li><a href="certificates.html" data-i18n="company.certificates">Сертификаты компании</a></li>
+                <li><a href="licenses.html" data-i18n="company.licenses">лицензии</a></li>
+                <li><a href="reviews.html" data-i18n="company.work" style="border-bottom: none;">Отзывы о работе</a>
+                <!-- <li><a href="reviews.html" data-i18n="wartnoma" style="border-bottom: none;">Shartnoma</a> -->
+                </li>
+              </ul>
+            </li>
+            <!-- o`chirgan ko`t faqat bu yozuvni xazillashtimmmmmm o`chirgan chiroyli bola "boshqa dasturchiga estalik" -->
+
+
+            <li>
+              <a href="#" data-i18n="nav.services">Услуги ▾</a>
+              <ul class="submenu">
+                <li><a href="linear.html" data-i18n="services.linear">Линейное строительство</a></li>
+                <li><a style="border-bottom: none;" href="./civile.html" data-i18n="services.civil">Гражданское
+                    строительство</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="contact.html" data-i18n="nav.contacts">Контакты </a>
+              <ul class="submenu">
+                <li><a href="contact.html" data-i18n="contact.contact">Контакты</a></li>
+                <li><a href="map.html" data-i18n="InMap">Мы на карте</a></li>
+                <li><a style="border-bottom: none;" href="#" data-i18n="Fikr">Обратная связь</a></li>
+              </ul>
+            </li>
+
+
+            <li>
+              <a href="#" data-i18n="nav.lang">Язык ▾</a>
+              <ul class="submenu">
+                <li><a href="#" onclick="__setLang('uz')">uz</a></li>
+                <li><a href="#" onclick="__setLang('ru')">ru</a></li>
+                <li><a style="border-bottom:none ;" href="#" onclick="__setLang('en')">en</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+       <div class="fons">
+         <button class="fon" id="theme-toggle"><i class="fa-solid fa-sun"></i></button>
+        <button class="burger fon" id="burger" aria-label="menu"><i class="fa-solid fa-bars"></i></button>
+       </div>
+
+      </div>
+      <div class="mobile" id="mobile">
+
+        <nav class="menu-mobil">
+          <ul>
+            <li><a href="index.html" data-i18n="nav.home">Главная</a></li>
+
+            <li>
+              <a href="#" data-i18n="nav.company">Компания ▾</a>
+              <ul class="submenu">
+                <li><a href="about.html" data-i18n="company.about">О компании</a></li>
+                <li><a href="managment.html" data-i18n="company.management">Руководство</a></li>
+                <li><a href="policy.html" data-i18n="company.rukovotsva">Сертификаты руководства</a></li>
+                <li><a href="certificates.html" data-i18n="company.certificates">Сертификаты компании</a></li>
+                <li><a href="licenses.html" data-i18n="company.licenses">лицензии</a></li>
+                <li><a href="reviews.html" data-i18n="company.work" style="border-bottom: none;">Отзывы о работе</a>
+                </li>
+              </ul>
+            </li>
+            <!-- o`chirgan ko`t faqat bu yozuvni xazillashtimmmmmm o`chirgan chiroyli bola "boshqa dasturchiga estalik" -->
+
+
+            <li>
+              <a href="#" data-i18n="nav.services">Услуги ▾</a>
+              <ul class="submenu">
+                <li><a href="linear.html" data-i18n="services.linear">Линейное строительство</a></li>
+                <li><a style="border-bottom: none;" href="./civile.html" data-i18n="services.civil">Гражданское
+                    строительство</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="contact.html" data-i18n="nav.contacts">Контакты </a>
+              <ul class="submenu">
+                <li><a href="contact.html" data-i18n="contact.contact">Контакты</a></li>
+                <li><a href="map.html" data-i18n="InMap">Мы на карте</a></li>
+                <li><a style="border-bottom: none;" href="#" data-i18n="Fikr">Обратная связь</a></li>
+              </ul>
+            </li>
+
+
+            <li>
+              <a href="#" data-i18n="nav.lang">Язык ▾</a>
+              <ul class="submenu">
+                <li><a href="#" onclick="__setLang('uz')">uz</a></li>
+                <li><a href="#" onclick="__setLang('ru')">ru</a></li>
+                <li><a style="border-bottom:none ;" href="#" onclick="__setLang('en')">en</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        
+      </div>
+    </header>
+
+  <main class="cliver.html">
+  <section class="section-text">
+    <h1 class="section-text-h1" data-i18n="linear.title">ЛИНЕЙНОЕ СТРОИТЕЛЬСТВО</h1>
+    <p class="section-text-p" data-i18n="linear.description">
+      Строительство и монтаж линейных объектов нефтегазовой промышленности на основе международных стандартов
+    </p>
+  </section>
+
+  <div class="section_img">
+    <h1 data-i18n="linear.services_title">Услуги линейного строительства</h1>
+    <p data-i18n="linear.services_description">
+      Профессиональные услуги по строительству и монтажу линейных объектов нефтегазовой промышленности
+    </p>
+  </div>
+
+  <section class="services">
+    <h2  data-i18n="works.title">Виды работ</h2>
+    <p class="section-subtitle" data-i18n="works.subtitle">
+      Основные услуги в гражданском строительстве
+    </p>
+
+    <div class="services-grid  services-grid-top" >
+      <article class="service-card" >
+        <div class="icon-box"><i class="fa-solid fa-industry"></i></div>
+        <h3 data-i18n="works.gas.title">Газопроводы</h3>
+        <p data-i18n="works.gas.text">Строительство и монтаж систем газопроводов</p>
+      </article>
+
+      <article class="service-card">
+        <div class="icon-box"><i class="fa-solid fa-wrench"></i></div>
+        <h3 data-i18n="works.drill.title">Горизонтальное бурение</h3>
+        <p data-i18n="works.drill.text">Бестраншейная прокладка инженерных коммуникаций</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="services">
+    <h2 data-i18n="activity.title">Виды деятельности</h2>
+    <p class="section-subtitle" data-i18n="activity.subtitle">
+      Основные виды деятельности в линейном строительстве
+    </p>
+
+    <div class="services-grid-bottom">
+      <article class="service-card serves-bootom-card">
+        <div class="icon-box"><i class="fa-solid fa-users"></i></div>
+        <h3 data-i18n="activity.design.title">Проектирование</h3>
+        <p data-i18n="activity.design.text">Проектирование и планирование линейных объектов</p>
+      </article>
+
+      <article class="service-card serves-bootom-card">
+        <div class="icon-box"><i class="fa-solid fa-wrench"></i></div>
+        <h3 data-i18n="activity.build.title">Строительство</h3>
+        <p data-i18n="activity.build.text">Строительство и монтаж линейных объектов</p>
+      </article>
+
+      <article class="service-card serves-bootom-card">
+        <div class="icon-box"><i class="fa-solid fa-shield-halved"></i></div>
+        <h3 data-i18n="activity.control.title">Контроль</h3>
+        <p data-i18n="activity.control.text">Контроль качества и обеспечение строительного процесса</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="services">
+    <h2 data-i18n="advantages.title">Наши преимущества</h2>
+    <p class="section-subtitle" data-i18n="advantages.subtitle">
+      Наши основные преимущества в гражданском строительстве
+    </p>
+
+    <div class="services-grid">
+      <article class="service-card serves-bootom-card">
+        <div class="icon-box"><i class="fa-solid fa-medal"></i></div>
+        <h3 data-i18n="advantages.quality.title">Качество</h3>
+        <p data-i18n="advantages.quality.text">Высокие стандарты качества</p>
+      </article>
+
+      <article class="service-card serves-bootom-card">
+        <div class="icon-box"><i class="fa-regular fa-clock"></i></div>
+        <h3 data-i18n="advantages.time.title">Время</h3>
+        <p data-i18n="advantages.time.text">Своевременное выполнение работ</p>
+      </article>
+
+      <article class="service-card serves-bootom-card">
+        <div class="icon-box"><i class="fa-solid fa-shield-halved"></i></div>
+        <h3 data-i18n="advantages.safety.title">Безопасность</h3>
+        <p data-i18n="advantages.safety.text">Соблюдение стандартов безопасности</p>
+      </article>
+
+      <article class="service-card serves-bootom-card">
+        <div class="icon-box"><i class="fa-solid fa-bolt"></i></div>
+        <h3 data-i18n="advantages.experience.title">Опыт</h3>
+        <p data-i18n="advantages.experience.text">Опытные специалисты</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section_history">
+    <h1 class="section-history-h1" data-i18n="history.title">Наша история</h1>
+    <p  class="section-history-p"data-i18n="history.description">Компания BARS SPECIAL имеет более 25 лет опыта в гражданском строительстве</p>
+    <div class="historys">
+      <p data-i18n="history.item1">5+ лет опыта</p>
+      <p data-i18n="history.item2">100+ успешных проектов</p>
+      <p data-i18n="history.item3">Международные стандарты</p>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="cta-content">
+      <h2 data-i18n="cta.title">Нужны услуги гражданского строительства?</h2>
+      <p data-i18n="cta.text">Наши специалисты помогут выбрать оптимальное решение</p>
+      <a href="#contact" class="cta-btn" data-i18n="cta.btn">
+        Связаться с нами <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+  </section>
+</main>
+
+  <footer class="footer">
+    <div class="footer__grid">
+      <div class="col">
+        <div class="brand">
+          <img class="brand__logo" src="barsimg/logo.png" alt="">
+          <div>
+            <h3 class="brand__title">BARS SPECIAL</h3>
+          </div>
+        </div>
+
+        <p class="desc" data-i18n="footer.desc">
+          BARS SPECIAL — одна из крупнейших промышленных и строительных компаний Узбекистана.
+          Мы предоставляем нашим клиентам качественные услуги и инновационные решения.
+        </p>
+
+        <div class="contact">
+          <span><i class="fa-solid fa-phone"></i></span>
+          <span> +998 (97)738-74-65</span>
+          <span><i class="fa-solid fa-envelope"></i></span>
+          <a href="mailto:info@barsspecial.uz">info@barsspecial.uz</a>
+        </div>
+      </div>
+
+      <div class="col">
+        <h4 data-i18n="footer.services.title">Услуги</h4>
+        <ul>
+          <li><a href="#" data-i18n="footer.services.linear">Линейное строительство</a></li>
+          <li><a href="#" data-i18n="footer.services.civil">Гражданское строительство</a></li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h4 data-i18n="footer.company.title">Компания</h4>
+        <ul>
+          <li><a href="#" data-i18n="company.about">О компании</a></li>
+          <li><a href="#" data-i18n="company.management">Руководство</a></li>
+          <li><a href="#" data-i18n="company.policy">Политика предприятия</a></li>
+          <li><a href="#" data-i18n="company.certificates">Свидетельства</a></li>
+          <li><a href="#" data-i18n="company.licenses">Разрешения</a></li>
+          <li><a href="#" data-i18n="company.success">История успеха</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="ikonka">
+      <a href="https://www.instagram.com/bars_special?igsh=MWp4NDRwOHVrZnFsOA%3D%3D&utm_source=qr"><i
+          class="fa-brands fa-instagram"></i></a>
+      <a href="https://t.me/barsspecial_uz"><i class="fa-brands fa-telegram"></i></a>
+      <a href="https://www.youtube.com/@BarsSpecial"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=61579253676633"><i class="fa-brands fa-facebook"></i></a>
+    </div>
+
+    <div class="legal">
+      <div data-i18n="footer.copy">© 2025 БАРС СПЕЦИАЛ. Все права защищены.</div>
+      <div style="display:flex;gap:18px;flex-wrap:wrap">
+        <a href="#" data-i18n="footer.privacy">Политика конфиденциальности</a>
+        <a href="#" data-i18n="footer.terms">Условия использования</a>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <script src="script.js?v=160"></script>
+  <script src="i18n.js"></script>
+</body>
+
+</html>
